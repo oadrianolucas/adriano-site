@@ -55,14 +55,10 @@ export default function Home() {
         <p className="leading-relaxed font-semibold">
           This website is for sharing my links and life experiences.
         </p>
-        <div className="grid lg:grid-cols-3 gap-3 place-items-stretch">
-          <button onClick={() => setIsModalOpen(true)} className={buttonStyle}>
-            Resume
-          </button>
-          <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-          {createLink("Articles", "https://medium.com/@oadrianolucas")}
-          {createLink("YouTube", "#")}
-        </div>
+        <button onClick={() => setIsModalOpen(true)} className={buttonStyle}>
+          Resume
+        </button>
+        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         <div className="rounded p-2 px-6 bg-gray-800">
           <h3 className="font-semibold">Social Media</h3>
           <ul className="list-disc pl-4">

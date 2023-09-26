@@ -2,6 +2,7 @@
   "name": "adriano-app",
   "version": "0.1.0",
   "private": true,
+  "author": "Adriano Lucas",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
